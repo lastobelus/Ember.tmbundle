@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>renderTemplate: function() {
+  console.log("${3:${TM_FILEPATH/(?:\A|(?:.*\/routes\/)|_)([A-Za-z0-9]+)(?:\.js)?/(?2::\u$1)/g}}-&gt;renderTemplate");
+  this.render(${2});
+  console.log("${3:${TM_FILEPATH/(?:\A|(?:.*\/routes\/)|_)([A-Za-z0-9]+)(?:\.js)?/(?2::\u$1)/g}}-&gt;renderTemplate finished.");
+},
+$0</string>
+	<key>name</key>
+	<string>renderTemplate</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>krent</string>
+	<key>uuid</key>
+	<string>F117FA02-B448-46EB-BB53-6C6D34AD30A8</string>
+</dict>
+</plist>
