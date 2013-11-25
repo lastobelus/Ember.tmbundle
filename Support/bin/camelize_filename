@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+c=%w{config helpers mixins controllers models routes templates views}.join('|')
+r = %r{.*/(?:#{c})/(.*)\.js}
+puts ENV['TM_FILEPATH'].sub(%r{.*/(?:#{c})/(.*)\.js},'\1').
+  gsub(/(?:_|(\/)|^)([a-z\d]*)/){|s| "#{$1}#{$2.capitalize}" }.gsub('/','')

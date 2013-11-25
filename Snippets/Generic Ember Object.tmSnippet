@@ -7,7 +7,7 @@
   ${2::p}${0}
 });</string>
 	<key>name</key>
-	<string>Generic Ember Object</string>
+	<string>Generic Ember Object (Em.)</string>
 	<key>scope</key>
 	<string>source.js, text.html</string>
 	<key>tabTrigger</key>

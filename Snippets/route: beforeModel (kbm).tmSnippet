@@ -3,14 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:property}: Ember.computed.alias("${2:some.property}"),$0</string>
+	<string>beforeModel: function(transition) {
+  ${1:console.groupCollapsed("`camelize_filename`-&gt;beforeModel");
+  }$2
+  console.groupEnd();
+  ${3:return ${4:promise};}
+}$0</string>
 	<key>name</key>
-	<string>Ember.computed.alias (ecoa)</string>
+	<string>route: beforeModel (kbm)</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>ecoa</string>
+	<string>kbm</string>
 	<key>uuid</key>
-	<string>8AD31DBB-5F42-46CE-BF26-76264C45E6DA</string>
+	<string>F00C269A-CCDF-4EE0-B403-3A5523E285F6</string>
 </dict>
 </plist>

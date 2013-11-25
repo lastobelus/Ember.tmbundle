@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:didInsertElement}: function() {
-  ${2:console.log('${3:Class}-&gt;$1')};
-},
-</string>
+	<string>${1:someMethod}: function($2) {
+  ${3:console.log("`camelize_filename`-&gt;$1");
+  }$4
+},$0</string>
 	<key>name</key>
-	<string>javascript-object-method(hank)</string>
+	<string>object-method (hank)</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>afterModel: function(resolvedModel, transition) {
+  ${1:console.groupCollapsed("`camelize_filename`-&gt;afterModel");
+  }$2
+  console.groupEnd();
+  ${3:return ${4:promise};}
+}$0</string>
+	<key>name</key>
+	<string>route: afterModel (kam)</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>kam</string>
+	<key>uuid</key>
+	<string>E98AF408-2E2E-422E-91FA-1ECFBE5342FE</string>
+</dict>
+</plist>

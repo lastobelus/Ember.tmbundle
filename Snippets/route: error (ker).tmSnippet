@@ -3,14 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:property}: Ember.computed.alias("${2:some.property}"),$0</string>
+	<string>error: function(error, transition) {
+  ${1:console.groupCollapsed("`camelize_filename`-&gt;error");
+  }$2
+  console.groupEnd();
+}$0</string>
 	<key>name</key>
-	<string>Ember.computed.alias (ecoa)</string>
+	<string>route: error (ker)</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>ecoa</string>
+	<string>ker</string>
 	<key>uuid</key>
-	<string>8AD31DBB-5F42-46CE-BF26-76264C45E6DA</string>
+	<string>7B229F17-D61E-4946-A0B6-B70E47F2B081</string>
 </dict>
 </plist>

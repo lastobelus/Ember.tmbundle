@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>willDestroyElement: function() {
+  ${1:console.log("`camelize_filename`-&gt;willDestroyElement");
+  }${2}
+  ${3:console`camelize_filename`-&gt;willDestroyElement finished");
+}</string>
+	<key>name</key>
+	<string>view: willDestroyElement (uwide)</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>uwide</string>
+	<key>uuid</key>
+	<string>CE28D14E-4DBB-4810-9D44-318220911E69</string>
+</dict>
+</plist>

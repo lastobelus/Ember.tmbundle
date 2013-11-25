@@ -3,14 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:property}: Ember.computed.alias("${2:some.property}"),$0</string>
+	<string>forEach(function(${1:obj}) {
+  ${2}
+});$0
+</string>
 	<key>name</key>
-	<string>Ember.computed.alias (ecoa)</string>
+	<string>Ember.forEach (fe)</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>ecoa</string>
+	<string>fe</string>
 	<key>uuid</key>
-	<string>8AD31DBB-5F42-46CE-BF26-76264C45E6DA</string>
+	<string>B2DA10BD-D081-4A48-BFC2-6A7CE73BB845</string>
 </dict>
 </plist>

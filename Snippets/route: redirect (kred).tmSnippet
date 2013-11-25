@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>redirect: function(model) {
+  ${1:console.groupCollapsed("`camelize_filename`-&gt;redirect");
+  }this.transitionTo('${3:some.route}'${4:, ${5:objects}});
+  console.groupEnd();
+}$0</string>
+	<key>name</key>
+	<string>route: redirect (kred)</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>kred</string>
+	<key>uuid</key>
+	<string>D1EC627F-C610-4220-A70B-CA31C1357F7E</string>
+</dict>
+</plist>

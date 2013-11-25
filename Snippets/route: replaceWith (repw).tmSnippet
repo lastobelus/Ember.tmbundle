@@ -3,14 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:property}: Ember.computed.alias("${2:some.property}"),$0</string>
+	<string>`# same as transitionTo but replaces current url/history entry instead
+#  of adding one`this.replaceWith('${1:some.route}'${2:, ${3:objects}});</string>
 	<key>name</key>
-	<string>Ember.computed.alias (ecoa)</string>
+	<string>route: replaceWith (repw)</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>ecoa</string>
+	<string>repw</string>
 	<key>uuid</key>
-	<string>8AD31DBB-5F42-46CE-BF26-76264C45E6DA</string>
+	<string>7C390DAF-16E9-4969-A58D-D489D36408D0</string>
 </dict>
 </plist>

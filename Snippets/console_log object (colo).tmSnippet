@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:property}: Ember.computed.alias("${2:some.property}"),$0</string>
+	<string>console.groupCollapsed("${1:model}");console.debug(Ember.inspect($1)); console.debug($1);console.groupEnd();</string>
 	<key>name</key>
-	<string>Ember.computed.alias (ecoa)</string>
+	<string>console.log object (colo)</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>ecoa</string>
+	<string>colo</string>
 	<key>uuid</key>
-	<string>8AD31DBB-5F42-46CE-BF26-76264C45E6DA</string>
+	<string>7572B2D9-891F-4D61-82D8-B7198007EF83</string>
 </dict>
 </plist>

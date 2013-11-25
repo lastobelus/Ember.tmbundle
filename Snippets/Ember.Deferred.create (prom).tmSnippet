@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:property}: Ember.computed.alias("${2:some.property}"),$0</string>
+	<string>var ${1:promise} = Ember.Deferred.create();</string>
 	<key>name</key>
-	<string>Ember.computed.alias (ecoa)</string>
+	<string>Ember.Deferred.create (prom)</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>ecoa</string>
+	<string>prom</string>
 	<key>uuid</key>
-	<string>8AD31DBB-5F42-46CE-BF26-76264C45E6DA</string>
+	<string>9D16E848-7FFC-4F93-A68E-AADFB27E982B</string>
 </dict>
 </plist>

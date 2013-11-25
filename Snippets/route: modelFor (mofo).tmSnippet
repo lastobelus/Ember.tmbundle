@@ -3,14 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:property}: Ember.computed.alias("${2:some.property}"),$0</string>
+	<string>this.modelFor('${1:wat}')</string>
 	<key>name</key>
-	<string>Ember.computed.alias (ecoa)</string>
-	<key>scope</key>
-	<string>source.js</string>
+	<string>route: modelFor (mofo)</string>
 	<key>tabTrigger</key>
-	<string>ecoa</string>
+	<string>mofo</string>
 	<key>uuid</key>
-	<string>8AD31DBB-5F42-46CE-BF26-76264C45E6DA</string>
+	<string>46141DD4-53D6-417E-AEBD-F46616888D04</string>
 </dict>
 </plist>

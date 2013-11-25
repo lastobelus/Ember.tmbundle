@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>didInsertElement: function() {
+  ${1:console.log("`camelize_filename`-&gt;didInsertElement");
+  }${3}
+  ${4:console`camelize_filename`-&gt;didInsertElement finished");
+}</string>
+	<key>name</key>
+	<string>view: didInsertElement (udie)</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>udie</string>
+	<key>uuid</key>
+	<string>B444AA31-316D-458E-9CE2-46C1BCE3F931</string>
+</dict>
+</plist>
