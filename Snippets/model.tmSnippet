@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:${2:MyView} = }Em.View.extend({
-	${3::p}${0}
-});</string>
+	<string>model: function() {
+	return this.store.find${1:}('${2:}');
+}</string>
 	<key>name</key>
-	<string>Em.View</string>
+	<string>model</string>
 	<key>scope</key>
-	<string>source.js, text.html</string>
+	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>Emv</string>
+	<string>model</string>
 	<key>uuid</key>
-	<string>DB69AFA3-D598-4482-97F5-5514D9DF7977</string>
+	<string>B5BE0EC1-509A-4B3E-A4BA-069496701725</string>
 </dict>
 </plist>

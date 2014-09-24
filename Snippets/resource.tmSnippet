@@ -3,16 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:${2:MyView} = }Em.View.extend({
-	${3::p}${0}
-});</string>
+	<string>this.resource('${1:resource}', { path: '/:${2:$1_id}'} );
+$0</string>
 	<key>name</key>
-	<string>Em.View</string>
+	<string>resource</string>
 	<key>scope</key>
-	<string>source.js, text.html</string>
+	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>Emv</string>
+	<string>resource</string>
 	<key>uuid</key>
-	<string>DB69AFA3-D598-4482-97F5-5514D9DF7977</string>
+	<string>96F2569D-DC8A-454F-A267-F035BA4410F6</string>
 </dict>
 </plist>

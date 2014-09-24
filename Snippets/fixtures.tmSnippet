@@ -3,16 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:${2:MyView} = }Em.View.extend({
-	${3::p}${0}
-});</string>
+	<string>App.${1:Model}.FIXTURES = [
+	{
+		$0
+	}
+];</string>
 	<key>name</key>
-	<string>Em.View</string>
+	<string>Model: Add fixtures</string>
 	<key>scope</key>
-	<string>source.js, text.html</string>
+	<string>text.html, source.js</string>
 	<key>tabTrigger</key>
-	<string>Emv</string>
+	<string>fix</string>
 	<key>uuid</key>
-	<string>DB69AFA3-D598-4482-97F5-5514D9DF7977</string>
+	<string>DC24AB77-1450-4B7E-A5A2-952FAC318ACA</string>
 </dict>
 </plist>

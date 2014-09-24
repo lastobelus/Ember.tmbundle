@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:${2:MyView} = }Em.View.extend({
-	${3::p}${0}
+	<string>Em.run(function() {
+  $0
 });</string>
 	<key>name</key>
-	<string>Em.View</string>
+	<string>Em.run</string>
 	<key>scope</key>
 	<string>source.js, text.html</string>
 	<key>tabTrigger</key>
-	<string>Emv</string>
+	<string>Emr</string>
 	<key>uuid</key>
-	<string>DB69AFA3-D598-4482-97F5-5514D9DF7977</string>
+	<string>657817CE-7EA7-4C54-B6F1-EBEF1F45E6DB</string>
 </dict>
 </plist>

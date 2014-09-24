@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:${2:MyView} = }Em.View.extend({
-	${3::p}${0}
-});</string>
+	<string>deepEqual(${1:actual}, ${2:expected}, '${3:message}');</string>
 	<key>name</key>
-	<string>Em.View</string>
+	<string>deepEqual</string>
 	<key>scope</key>
 	<string>source.js, text.html</string>
 	<key>tabTrigger</key>
-	<string>Emv</string>
+	<string>deq</string>
 	<key>uuid</key>
-	<string>DB69AFA3-D598-4482-97F5-5514D9DF7977</string>
+	<string>B049710F-466D-4C12-9E9E-E9FC777B56C1</string>
 </dict>
 </plist>

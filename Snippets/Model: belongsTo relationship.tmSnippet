@@ -3,16 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:${2:MyView} = }Em.View.extend({
-	${3::p}${0}
-});</string>
+	<string>${1:name}: DS.belongsTo(${2:'${3:type}'}${4:,{ async: ${5:true}})$0
+</string>
 	<key>name</key>
-	<string>Em.View</string>
+	<string>Model: belongsTo relationship</string>
 	<key>scope</key>
-	<string>source.js, text.html</string>
+	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>Emv</string>
+	<string>bt</string>
 	<key>uuid</key>
-	<string>DB69AFA3-D598-4482-97F5-5514D9DF7977</string>
+	<string>34B16C6B-02F9-4E16-B978-E5BB8CFC00BE</string>
 </dict>
 </plist>
