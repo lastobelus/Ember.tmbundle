@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18 -wKU
+require "#{ENV['TM_SUPPORT_PATH']}/lib/osx/plist"
+
+tm_dialog = ENV["DIALOG"]
+appdir = File.join(ENV['TM_PROJECT_DIRECTORY'], 'app')
+resource = File.basename(ENV['TM_FILENAME'], File.extname(ENV['TM_FILENAME']))
+base_resource = resource.gsub(/ies$/, '').gsub(/es$/, '').gsub(/s$/, '')
+possibles = %x{find "#{appdir}" -type f}.split.select{|n| n =~ %r{/#{base_resource}(y|ies|es|s)?[/.]}}
+
+last_type = nil
+choices = []
+possibles.each do |path|
+  p = path.sub("#{appdir}/",'')
+  parts = p.split('/')
+  type = parts.shift
+  name = parts.join('/')
+  if type != last_type
+    choices &lt;&lt; "{separator = 1;}" if last_type
+    choices &lt;&lt; "{header=1; title = #{type};}"
+    last_type = type
+  end
+  name = "&gt;#{name}" if ENV['TM_FILEPATH'] == path
+  choices &lt;&lt; "{title = \"#{name}\"; path = #{path};}"
+end
+choices = choices.join(", ")
+s = %x{"$DIALOG" menu --items '(#{choices})'}
+if s &amp;&amp; (s.length &gt; 0)
+  p = OSX::PropertyList.load(s)
+  puts "p: #{p.inspect}"
+  %x{mate #{p["path"]}}
+end
+# puts choices.inspect</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>~@</string>
+	<key>name</key>
+	<string>GotoAlternateFile</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>atCaret</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>uuid</key>
+	<string>FBF461DD-79C8-4A23-B893-28D022297A45</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
