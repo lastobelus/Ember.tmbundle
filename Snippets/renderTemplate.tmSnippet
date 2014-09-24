@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>renderTemplate: function(controller, model) {
   ${1:console.groupCollapsed("`camelize_filename`-&gt;renderTemplate");
-  }this.render(${2:${3:template}{
+  }this.render(${2:${3:template}, {
     ${4:into: '${5:application}',
     }${6:outlet: '${7:modal}'}
   }});

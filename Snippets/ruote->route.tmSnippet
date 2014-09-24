@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:property}: Ember.computed.alias("${2:controllers.$1}"),$0</string>
+	<string>route</string>
 	<key>name</key>
-	<string>Ember.computed.alias (ecoa)</string>
+	<string>ruote-&gt;route</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>ecoa</string>
+	<string>ruote</string>
 	<key>uuid</key>
-	<string>8AD31DBB-5F42-46CE-BF26-76264C45E6DA</string>
+	<string>04DCF0D6-C3BB-4BDC-A6F0-0FEF47D80839</string>
 </dict>
 </plist>

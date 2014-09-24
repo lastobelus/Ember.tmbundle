@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:this}.get('${2:controller}')$0</string>
+	<string>${1:this}.get('${2|model,controller,value,selection,name,art,campaign|}')$0</string>
 	<key>name</key>
 	<string>Ember.get (eget)</string>
 	<key>scope</key>

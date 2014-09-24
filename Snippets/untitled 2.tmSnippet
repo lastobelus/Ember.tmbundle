@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:property}: Ember.computed.alias("${2:controllers.$1}"),$0</string>
+	<string>this.resource('${1:widget}', ${2:{path: '$3'}});</string>
 	<key>name</key>
-	<string>Ember.computed.alias (ecoa)</string>
+	<string>resource</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>ecoa</string>
+	<string>resou</string>
 	<key>uuid</key>
-	<string>8AD31DBB-5F42-46CE-BF26-76264C45E6DA</string>
+	<string>8D2776E5-A75E-4FA9-877B-44163C5EDCEE</string>
 </dict>
 </plist>

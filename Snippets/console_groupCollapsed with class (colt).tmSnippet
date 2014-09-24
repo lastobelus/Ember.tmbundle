@@ -3,14 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:property}: Ember.computed.alias("${2:controllers.$1}"),$0</string>
+	<string>console.groupCollapsed("`camelize_filename`-&gt;${1:method}");
+console.groupEnd();</string>
 	<key>name</key>
-	<string>Ember.computed.alias (ecoa)</string>
+	<string>console.groupCollapsed with class (colt)</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>ecoa</string>
+	<string>colc</string>
 	<key>uuid</key>
-	<string>8AD31DBB-5F42-46CE-BF26-76264C45E6DA</string>
+	<string>910D504A-31A9-47C2-8C07-CAF9B34D7EA0</string>
 </dict>
 </plist>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:this}.set('${2:selection}', ${3});$0</string>
+	<string>${1:this}.set('${2|model,value,selection,name,x,y|}', ${3});$0</string>
 	<key>name</key>
 	<string>Ember.set (eset)</string>
 	<key>scope</key>

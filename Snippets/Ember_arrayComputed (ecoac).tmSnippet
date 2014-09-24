@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:property}: Ember.arrayComputed(
+  '${2:dependentProperty}',   
+  {
+    initialize: function(array, changeMeta, instanceMeta) {
+      $3
+    },
+    
+    addedItem: function(array, item, changeMeta, instanceMeta) {
+      $4
+      return array;
+    },
+    removedItem: function(array, item, changeMeta, instanceMeta) {
+      $5
+      return array;
+    }
+})$0</string>
+	<key>name</key>
+	<string>Ember.arrayComputed (ecoac)</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>ecoac</string>
+	<key>uuid</key>
+	<string>49846ED9-341A-43E1-9BEC-FFDA60210E78</string>
+</dict>
+</plist>

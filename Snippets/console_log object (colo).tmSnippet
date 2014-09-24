@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>console.groupCollapsed("${1:model}");console.debug(Ember.inspect($1)); console.debug($1);console.groupEnd();</string>
+	<string>console.log("${1}: ", $1);$0</string>
 	<key>name</key>
 	<string>console.log object (colo)</string>
 	<key>scope</key>
