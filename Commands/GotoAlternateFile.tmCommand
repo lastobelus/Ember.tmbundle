@@ -10,9 +10,11 @@ require "#{ENV['TM_SUPPORT_PATH']}/lib/osx/plist"
 
 tm_dialog = ENV["DIALOG"]
 appdir = File.join(ENV['TM_PROJECT_DIRECTORY'], 'app')
+appdir = File.join(ENV['TM_PROJECT_DIRECTORY'], 'js') unless File.exist?(appdir)
+# puts "appdir: #{appdir.inspect}"
 resource = File.basename(ENV['TM_FILENAME'], File.extname(ENV['TM_FILENAME']))
 base_resource = resource.gsub(/ies$/, '').gsub(/es$/, '').gsub(/s$/, '')
-possibles = %x{find "#{appdir}" -type f}.split.select{|n| n =~ %r{/#{base_resource}(y|ies|es|s)?[/.]}}
+possibles = %x{find "#{appdir}" -type f}.split.select{|n| n =~ %r{/#{base_resource}(y|ies|es|s)?(_controller|_route|_view)?[/.]}}
 
 last_type = nil
 choices = []
@@ -52,7 +54,7 @@ end
 	<key>outputLocation</key>
 	<string>atCaret</string>
 	<key>scope</key>
-	<string>source.js</string>
+	<string>source.js,text.html.handlebars</string>
 	<key>uuid</key>
 	<string>FBF461DD-79C8-4A23-B893-28D022297A45</string>
 	<key>version</key>

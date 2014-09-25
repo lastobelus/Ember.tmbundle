@@ -3,14 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:name}: DS.attr('${2|string,number,boolean,date|}')${2:,}</string>
+	<string>andThen(function() {
+	$0
+});
+</string>
 	<key>name</key>
-	<string>DS.attr</string>
+	<string>andThen</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>dsatr</string>
+	<string>anth</string>
 	<key>uuid</key>
-	<string>8899582F-92B5-4216-A1A9-87F0A5E352C1</string>
+	<string>FED8B295-3535-443C-BD49-A9FDE341FD56</string>
 </dict>
 </plist>
