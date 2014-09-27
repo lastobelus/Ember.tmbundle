@@ -4,9 +4,8 @@
 <dict>
 	<key>content</key>
 	<string>error: function(error, transition) {
-  ${1:console.groupCollapsed("`camelize_filename`-&gt;error");
-  }$2
-  console.groupEnd();
+	$2
+	console.groupEnd();
 }$0</string>
 	<key>name</key>
 	<string>route: error (ker)</string>

@@ -3,13 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>renderTemplate: function(controller, model) {
-  ${1:console.groupCollapsed("`camelize_filename`-&gt;renderTemplate");
-  }this.render(${2:${3:template}, {
-    ${4:into: '${5:application}',
-    }${6:outlet: '${7:modal}'}
+	<string>renderTemplate: function(controller${1:, model}) {
+	this.render(${2:${3:template}, {
+		${4:into: '${5:application}',
+		}${6:outlet: '${7:modal}'}
   }});
-  console.groupEnd();
 }$0</string>
 	<key>name</key>
 	<string>route: renderTemplate (kret)</string>

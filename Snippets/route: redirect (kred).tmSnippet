@@ -4,9 +4,7 @@
 <dict>
 	<key>content</key>
 	<string>redirect: function(model) {
-  ${1:console.groupCollapsed("`camelize_filename`-&gt;redirect");
-  }this.transitionTo('${3:some.route}'${4:, ${5:objects}});
-  console.groupEnd();
+	this.transitionTo('${3:some.route}'${4:, ${5:objects}});
 }$0</string>
 	<key>name</key>
 	<string>route: redirect (kred)</string>

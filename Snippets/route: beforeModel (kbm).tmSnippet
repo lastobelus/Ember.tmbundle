@@ -4,10 +4,8 @@
 <dict>
 	<key>content</key>
 	<string>beforeModel: function(transition) {
-  ${1:console.groupCollapsed("`camelize_filename`-&gt;beforeModel");
-  }$2
-  console.groupEnd();
-  ${3:return ${4:promise};}
+	$2
+	${3:return ${4:promise};}
 }$0</string>
 	<key>name</key>
 	<string>route: beforeModel (kbm)</string>

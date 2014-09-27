@@ -3,11 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>model: function(params) {
-  ${1:console.groupCollapsed("`camelize_filename`-&gt;model");
-  }$2
-  console.groupEnd();
-  ${3:return ${4:promise};}
+	<string>model: function(${2:params}) {
+	${3:return ${4:promise};}
 }$0</string>
 	<key>name</key>
 	<string>route: model (kmo)</string>

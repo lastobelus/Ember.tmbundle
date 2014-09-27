@@ -3,17 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>afterModel: function(resolvedModel, transition) {
-	$2
-	${3:return ${4:promise};}
+	<string>renderTemplate: function(controller${1:, model}) {
+	this.render(${2:${3:template}, {
+		${4:into: '${5:application}',
+		}${6:outlet: '${7:modal}'}
+	}});
 }$0</string>
 	<key>name</key>
-	<string>route: afterModel (kam)</string>
+	<string>route: renderTemplate (kren)</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>kam</string>
+	<string>kren</string>
 	<key>uuid</key>
-	<string>E98AF408-2E2E-422E-91FA-1ECFBE5342FE</string>
+	<string>ECB016F5-F737-4A0F-AEC9-87E990229943</string>
 </dict>
 </plist>
