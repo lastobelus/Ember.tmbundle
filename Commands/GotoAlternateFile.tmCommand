@@ -12,9 +12,21 @@ tm_dialog = ENV["DIALOG"]
 appdir = File.join(ENV['TM_PROJECT_DIRECTORY'], 'app')
 appdir = File.join(ENV['TM_PROJECT_DIRECTORY'], 'js') unless File.exist?(appdir)
 # puts "appdir: #{appdir.inspect}"
-resource = File.basename(ENV['TM_FILENAME'], File.extname(ENV['TM_FILENAME']))
-base_resource = resource.gsub(/ies$/, '').gsub(/es$/, '').gsub(/s$/, '')
-possibles = %x{find "#{appdir}" -type f}.split.select{|n| n =~ %r{/#{base_resource}(y|ies|es|s)?(_controller|_route|_view)?[/.]}}
+resources = ENV['TM_FILEPATH'].sub(File.join(ENV['TM_PROJECT_DIRECTORY'], 'app'), '').split('/')
+exit if resources.length &lt; 3
+resources.shift; resources.shift
+resources.map! do |resource|
+  File.basename(resource, File.extname(ENV['TM_FILENAME'])).
+    gsub(/ies$/, '').
+    gsub(/es$/, '').
+    gsub(/s$/, '')
+end
+
+possibles = []
+resources.each do |base_resource|
+  possibles += %x{find "#{appdir}" -type f}.split.select{|n| n =~ %r{/#{base_resource}(y|ies|es|s)?(_controller|_route|_view)?[/.]}}
+end
+possibles.uniq!
 
 last_type = nil
 choices = []
