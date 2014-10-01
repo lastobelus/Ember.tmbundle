@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:name}: DS.attr('${2|string,number,boolean,date|}')${3:,}</string>
+	<string>isEvery('${1:flag}')</string>
 	<key>name</key>
-	<string>DS.attr</string>
+	<string>array: isEvery</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>dsatr</string>
+	<string>isev</string>
 	<key>uuid</key>
-	<string>8899582F-92B5-4216-A1A9-87F0A5E352C1</string>
+	<string>B02ADFB2-2589-4A2D-936A-D4432A001FEB</string>
 </dict>
 </plist>

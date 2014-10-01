@@ -3,14 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:name}: DS.attr('${2|string,number,boolean,date|}')${3:,}</string>
+	<string>setEach('${1:flag}', ${2|true,false,value|});</string>
 	<key>name</key>
-	<string>DS.attr</string>
-	<key>scope</key>
-	<string>source.js</string>
+	<string>array: setEach</string>
 	<key>tabTrigger</key>
-	<string>dsatr</string>
+	<string>sea</string>
 	<key>uuid</key>
-	<string>8899582F-92B5-4216-A1A9-87F0A5E352C1</string>
+	<string>A4FA284D-CBF2-4DC4-9273-69731B00BBA7</string>
 </dict>
 </plist>

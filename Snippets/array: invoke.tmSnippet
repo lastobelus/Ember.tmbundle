@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:name}: DS.attr('${2|string,number,boolean,date|}')${3:,}</string>
+	<string>invoke('${1|save,deleteRecord|}');</string>
 	<key>name</key>
-	<string>DS.attr</string>
+	<string>array: invoke</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>dsatr</string>
+	<string>ivo</string>
 	<key>uuid</key>
-	<string>8899582F-92B5-4216-A1A9-87F0A5E352C1</string>
+	<string>C4BB4302-29C5-40A5-840D-6CD92E64895C</string>
 </dict>
 </plist>

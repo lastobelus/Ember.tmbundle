@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:name}: DS.attr('${2|string,number,boolean,date|}')${3:,}</string>
+	<string>this.store.createRecord('${1:thingy}', ${2:{
+	$3
+}});</string>
 	<key>name</key>
-	<string>DS.attr</string>
+	<string>Data: createRecord</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>dsatr</string>
+	<string>crec</string>
 	<key>uuid</key>
-	<string>8899582F-92B5-4216-A1A9-87F0A5E352C1</string>
+	<string>59175277-85EA-4AD1-B7D8-775631E128FA</string>
 </dict>
 </plist>

@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:name}: DS.attr('${2|string,number,boolean,date|}')${3:,}</string>
+	<string>filterBy('${1:prop}', ${2|true,false|})</string>
 	<key>name</key>
-	<string>DS.attr</string>
+	<string>filterBy</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>dsatr</string>
+	<string>filby</string>
 	<key>uuid</key>
-	<string>8899582F-92B5-4216-A1A9-87F0A5E352C1</string>
+	<string>D95F4B76-69A0-45C4-AA7A-CF5DF1189A11</string>
 </dict>
 </plist>

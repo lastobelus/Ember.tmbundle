@@ -47,7 +47,6 @@ choices = choices.join(", ")
 s = %x{"$DIALOG" menu --items '(#{choices})'}
 if s &amp;&amp; (s.length &gt; 0)
   p = OSX::PropertyList.load(s)
-  puts "p: #{p.inspect}"
   %x{mate #{p["path"]}}
 end
 # puts choices.inspect</string>
