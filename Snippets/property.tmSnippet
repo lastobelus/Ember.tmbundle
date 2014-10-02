@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:property}: function(${2:key, value}) {
-	${2/(key, value)/(?1:if (value === undefined\) {\n		\n	} else {\n		\n	}\n	)/}
-}.property('${3:dependencies}')${10:,}</string>
+	<string>${1}: function(${2:key, value}) {
+	${2/(key, value)/(?1:if (value === undefined\) {\n		\n	} else {\n		\n	})/}$4
+}.property('${3:${TM_CURRENT_WORD}}')${10:,}</string>
+	<key>keyEquivalent</key>
+	<string>^p</string>
 	<key>name</key>
 	<string>property</string>
 	<key>scope</key>

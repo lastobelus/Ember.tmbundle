@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>deleteRecord();</string>
+	<key>name</key>
+	<string>Data: deleteRecord</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>drec</string>
+	<key>uuid</key>
+	<string>E4A12DBE-688A-4AF4-AC40-B5E04AB43BB4</string>
+</dict>
+</plist>
