@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>this.store.query('${1:model}', {
+  ${2:name}: this.controller.get('$2')
+})$0</string>
+	<key>name</key>
+	<string>store.query</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>sq</string>
+	<key>uuid</key>
+	<string>13303344-A193-4CE2-AB96-90953E2D1448</string>
+</dict>
+</plist>

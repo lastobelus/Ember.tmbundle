@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>import config from './config/environment';
+</string>
+	<key>name</key>
+	<string>import config</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>imco</string>
+	<key>uuid</key>
+	<string>5C03D99B-211D-4E70-8B8A-CA5FA2B2637C</string>
+</dict>
+</plist>

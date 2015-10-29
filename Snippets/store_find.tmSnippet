@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>this.store.find('${1:${TM_FILENAME/(.*?)(\..+)/$1/}}')</string>
+	<key>name</key>
+	<string>store.find</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>sfin</string>
+	<key>uuid</key>
+	<string>0636DBA4-948A-4832-8443-C5959A0F7E2C</string>
+</dict>
+</plist>

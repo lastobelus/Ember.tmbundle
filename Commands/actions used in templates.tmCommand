@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+suggs=$(find $TM_PROJECT_DIRECTORY/app -name "*hbs" -exec cat {} \; | perl -ne 'print "{ display = ".chr(047).$1.chr(047)."; match = ".chr(047).$1.chr(047)."; }\n" if /(?:action|focus-out|insert-newline)[ "=\047]+(\w+)/'  | sort | uniq | paste -sd "," -)
+"$DIALOG" popup --suggestions "(${suggs})"</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^m</string>
+	<key>name</key>
+	<string>actions used in templates</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>tabTrigger</key>
+	<string>ait</string>
+	<key>uuid</key>
+	<string>8198B12F-E6B1-4A6E-B2EA-43EF0989D053</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
