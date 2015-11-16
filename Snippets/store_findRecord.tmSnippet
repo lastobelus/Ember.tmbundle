@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>model(params) {
-	return this.store.${1|findRecord,findAll,query,find|}('${2:}'$3);$0
-}</string>
+	<string>this.store.findRecord('${1:${TM_FILENAME/(.*?)(\..+)/$1/}}', $2)$0</string>
 	<key>name</key>
-	<string>model: function...</string>
+	<string>Data: store.findRecord</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>model</string>
+	<string>sfinr</string>
 	<key>uuid</key>
-	<string>B5BE0EC1-509A-4B3E-A4BA-069496701725</string>
+	<string>90878206-92E3-433E-B4F8-7D3AB7B9D6BF</string>
 </dict>
 </plist>

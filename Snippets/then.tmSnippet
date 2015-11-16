@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>then(function($1) {
+	<string>then(($1) =&gt; {
 	${0:$TM_SELECTED_TEXT}
 })</string>
 	<key>name</key>

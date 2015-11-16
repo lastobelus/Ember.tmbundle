@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>model(params) {
-	return this.store.${1|findRecord,findAll,query,find|}('${2:}'$3);$0
-}</string>
+	<string>this.controller.get("$1")$0</string>
 	<key>name</key>
-	<string>model: function...</string>
+	<string>this.controller.get</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>model</string>
+	<string>cg</string>
 	<key>uuid</key>
-	<string>B5BE0EC1-509A-4B3E-A4BA-069496701725</string>
+	<string>27DE0B32-F932-4E39-93F5-1BBCC216F94C</string>
 </dict>
 </plist>

@@ -7,7 +7,7 @@
 	return $1.get('$2');
 })</string>
 	<key>name</key>
-	<string>store.filter</string>
+	<string>Data: store.filter</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

@@ -7,19 +7,17 @@
 	<key>command</key>
 	<string>#!/usr/bin/env bash
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
-suggs=$(find $TM_PROJECT_DIRECTORY/app -name "*hbs" -exec cat {} \; | perl -ne 'print $1."\n" if /action[ "=\047]+(\w+)/'  | sort | uniq | paste -sd "," -)
-# echo -n "\${1|${suggs}|}: function () {\\n\\t\$2\\n}\${3:,}"
+appname=`basename $TM_PROJECT_DIRECTORY`
+suggs=$(ls $TM_PROJECT_DIRECTORY/app/utils | perl -ne 'chomp; s/\.js//; print "$_\n"'  | paste -sd "," -)
 cat &lt;&lt;SNIPPET
-\${1|${suggs}|}(\$2) {
-  \$0
-}\${3:,}
+import \${1/(?:-)(\w+)/\u\$1/g} from '$appname/utils/\${1|${suggs}|}';\$0
 SNIPPET</string>
 	<key>input</key>
 	<string>none</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
-	<string>action</string>
+	<string>import util</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
@@ -29,9 +27,9 @@ SNIPPET</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>ai</string>
+	<string>imut</string>
 	<key>uuid</key>
-	<string>AC718822-2215-47DA-89BA-0FDF69FB09F1</string>
+	<string>DF7E6910-1C6A-4D0C-8A89-0796A3FAD397</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>

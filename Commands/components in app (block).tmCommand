@@ -7,19 +7,18 @@
 	<key>command</key>
 	<string>#!/usr/bin/env bash
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
-suggs=$(find $TM_PROJECT_DIRECTORY/app -name "*hbs" -exec cat {} \; | perl -ne 'print $1."\n" if /action[ "=\047]+(\w+)/'  | sort | uniq | paste -sd "," -)
-# echo -n "\${1|${suggs}|}: function () {\\n\\t\$2\\n}\${3:,}"
+suggs=$(ls $TM_PROJECT_DIRECTORY/app/components | perl -ne 'chomp;print "$_\n"'  | sort | uniq | paste -sd "," -)
 cat &lt;&lt;SNIPPET
-\${1|${suggs}|}(\$2) {
+{{#\${1|${suggs}|} \$2}}
   \$0
-}\${3:,}
+{{/\$1}}
 SNIPPET</string>
 	<key>input</key>
 	<string>none</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
-	<string>action</string>
+	<string>components in app (block)</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
@@ -27,11 +26,11 @@ SNIPPET</string>
 	<key>outputLocation</key>
 	<string>replaceInput</string>
 	<key>scope</key>
-	<string>source.js</string>
+	<string>text.html</string>
 	<key>tabTrigger</key>
-	<string>ai</string>
+	<string>comb</string>
 	<key>uuid</key>
-	<string>AC718822-2215-47DA-89BA-0FDF69FB09F1</string>
+	<string>990EDB3F-B882-42D9-B4E7-299B4BD976E9</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>

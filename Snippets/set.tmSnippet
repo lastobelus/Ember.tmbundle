@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>set('$1', $2)</string>
+	<string>set('$1', ${2:$1})$0</string>
 	<key>name</key>
 	<string>set</string>
 	<key>scope</key>

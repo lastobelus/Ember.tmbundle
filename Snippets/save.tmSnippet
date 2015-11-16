@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>save();</string>
+	<string>save()${1:;}</string>
 	<key>name</key>
 	<string>save</string>
 	<key>scope</key>

@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>model(params) {
-	return this.store.${1|findRecord,findAll,query,find|}('${2:}'$3);$0
-}</string>
+	<string>attributeBindings: [ '${2:$1:}${1|href,style|}' ],$0</string>
 	<key>name</key>
-	<string>model: function...</string>
+	<string>attributeBindings</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>model</string>
+	<string>atrb</string>
 	<key>uuid</key>
-	<string>B5BE0EC1-509A-4B3E-A4BA-069496701725</string>
+	<string>D468A0E4-3824-4F22-94E0-A06BBCE18BDA</string>
 </dict>
 </plist>

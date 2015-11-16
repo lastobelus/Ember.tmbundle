@@ -8,6 +8,8 @@
 	<string>controller</string>
 	<key>scope</key>
 	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>c</string>
 	<key>uuid</key>
 	<string>DFB22BF0-9F5D-46AF-A563-A5D4E38D2C2A</string>
 </dict>

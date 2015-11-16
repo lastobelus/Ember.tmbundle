@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>this.store.createRecord('${1:thingy}', ${2:{
+	<string>this.store.createRecord('${1:thingy}'${2:, {
 	$3
-}});</string>
+\}});</string>
 	<key>name</key>
 	<string>Data: createRecord</string>
 	<key>scope</key>

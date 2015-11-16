@@ -3,16 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>model(params) {
-	return this.store.${1|findRecord,findAll,query,find|}('${2:}'$3);$0
-}</string>
+	<string>${1}: computed('${2:${TM_CURRENT_WORD}}', {
+  get(key) {
+    $3return $4;
+  },
+  ${5:set(key, value) {
+    $6return value;
+  \}}
+})${10:,}</string>
 	<key>name</key>
-	<string>model: function...</string>
+	<string>property (computed syntax)</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>model</string>
+	<string>:c</string>
 	<key>uuid</key>
-	<string>B5BE0EC1-509A-4B3E-A4BA-069496701725</string>
+	<string>4E720FB1-73F1-412F-8327-22612DFA16D4</string>
 </dict>
 </plist>

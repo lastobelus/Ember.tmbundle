@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>model(params) {
-	return this.store.${1|findRecord,findAll,query,find|}('${2:}'$3);$0
-}</string>
+	<string>Ember.inject.service('${1:service}')</string>
 	<key>name</key>
-	<string>model: function...</string>
+	<string>Ember.inject</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>model</string>
+	<string>emin</string>
 	<key>uuid</key>
-	<string>B5BE0EC1-509A-4B3E-A4BA-069496701725</string>
+	<string>E3AFBEB1-9A4A-4220-ADE5-4C436E0EA4EA</string>
 </dict>
 </plist>

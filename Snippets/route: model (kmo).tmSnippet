@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>model: function(${2:params}) {
-	${3:return ${4:promise};}
-}$0</string>
+	<string>model(params) {
+	return this.store.${1|findRecord,findAll,query,find|}('${2:}'$3);$0
+}</string>
 	<key>name</key>
 	<string>route: model (kmo)</string>
 	<key>scope</key>

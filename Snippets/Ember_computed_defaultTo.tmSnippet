@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>model(params) {
-	return this.store.${1|findRecord,findAll,query,find|}('${2:}'$3);$0
-}</string>
+	<string>${1:property}: Ember.computed.oneWay('${2:default${1/./\u$0/}}'),$0</string>
 	<key>name</key>
-	<string>model: function...</string>
+	<string>Ember.computed.oneWay (ecod)</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>model</string>
+	<string>ecod</string>
 	<key>uuid</key>
-	<string>B5BE0EC1-509A-4B3E-A4BA-069496701725</string>
+	<string>BA9782BA-F087-4274-80CB-B4F558108AD1</string>
 </dict>
 </plist>
